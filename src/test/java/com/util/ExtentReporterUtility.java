@@ -10,7 +10,7 @@ public class ExtentReporterUtility {
     private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //using threadlocal for parallel testing
 
     public static void setupSparkReporter(String reportName){
-        ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "\\" +reportName);
+        ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "//" +reportName);
         extentReports = new ExtentReports();
         extentReports.attachReporter(extentSparkReporter);
     }
