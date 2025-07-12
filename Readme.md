@@ -43,6 +43,7 @@ Before running this framework, ensure the following software is installed on you
 - **Cloud Testing:** Integrated with LambdaTest to run tests on the cloud.
 - **Logging:** Uses Log4j for detailed logs.
 - **Reporting:** Generates detailed reports using Extent Reports.
+- **Jenkins:** Launching Jenkins in AWS ece2 instance and creating dashboard in Jenkins with detailed report.
 
 
 
