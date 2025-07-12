@@ -25,7 +25,7 @@ public class TestBase {
     @BeforeMethod(description = "Load the HomePage of the Website")
     public void setUp(@Optional("chrome") String browser,
                       @Optional("false")boolean isLambdaTest,
-                      @Optional("true")boolean isHeadless, ITestResult result){
+                      @Optional("false")boolean isHeadless, ITestResult result){
 
         this.isLambdaTest = isLambdaTest;
         WebDriver lambdaDriver;
@@ -49,7 +49,6 @@ public class TestBase {
         }else{
             homePage.quit(); //quit local session
         }
-
     }
 
 
